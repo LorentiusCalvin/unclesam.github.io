@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+		Payment - UNCLESAM - Lorentius Calvin
+    </title>
+    <link rel="icon" type="image/gif/png" href="image/titlelogo.png">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+</head>
+<body>
+    <nav>
+	    <a class="logonavhome" href="index.html"><img src="image/homeblue.png"></a>
+        <div class="navkanan" id="navkanan">
+            <a href="brands.html">BRANDS</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="brands.html">BRANDS</a>
+            <a href="about.html">ABOUT</a>
+    </div>
+
+    <span onclick="openNav()">&#9776;
+    </span>
+
+    <main>
+        <div class="container2" id="container2">
+            <div class="headinfo buypage">
+                <div class="dalemaninfo" id="dalemaninfo">
+                    <div class="infombpkiri" id="infombpkiri">
+                        <a href="infombp.html">
+                            <h1>MacBook Pro</h1>
+                        </a>
+                    </div>
+                    <div class="infombpkanan" id="infombpkanan">
+                        <a href="index.html" class="backtohome">Back to home</a>
+                    </div>
+                </div>
+            </div>
+        <div class="container3" id="container3">
+            <div class="overviewmbp">
+                <div class="fotoprodukkiri" id="fotoprodukkiri">
+                </div>
+                <div class="confirmed" id="confirmed">
+                </div>
+            </div>
+        <footer>
+            <div class="boxfooter">
+                <h1>About Us</h1><br>
+                <p>UncleSam is an international gadget </p><br>
+                <p>store. We provides USA gadgets legally</p><br>
+                <p>that you can buy with no worries.</p>
+            </div>
+            <div class="boxfooter">
+                <h1>Our Store</h1><br>
+                <p>UncleSam Store (Online)</p><br>
+                <p>UncleSam Store (Retail)</p><br>
+                <p>Partners and Affiliate</p>
+            </div>
+            <div class="boxfooter">
+                <h1>Help Center</h1><br>
+                <p>Support</p><br>
+                <p>Warranty</p><br>
+                <p>Store FAQs</p>
+            </div>
+            <div class="boxfooter end">
+                <h1>Contacts</h1><br>
+                <p>Facebook</p><br>
+                <p>Twitter</p><br>
+                <p>Instagram</p>
+            </div>
+        </footer>
+    </div>
+    </main>
+    <script>
+        
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        
+        document.getElementById('fotoprodukkiri').style.backgroundImage = "url('./imgproduk/mbpbg.jpg')";
+        document.getElementById('fotoprodukkiri').style.backgroundSize = "150%";
+        document.getElementById('fotoprodukkiri').style.backgroundRepeat = "no-repeat";
+        document.getElementById('fotoprodukkiri').style.backgroundPosition = "center";
+
+        document.getElementById('confirmed').style.backgroundImage = "url('./image/confirm.png')";
+        document.getElementById('confirmed').style.backgroundSize = "120%";
+        document.getElementById('confirmed').style.backgroundRepeat = "no-repeat";
+        document.getElementById('confirmed').style.backgroundPosition = "center";
+
+    </script>
+</body>
+</html>

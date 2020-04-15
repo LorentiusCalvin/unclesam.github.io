@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Brands - UNCLESAM - Lorentius Calvin
+        </title>
+        <link rel="icon" type="image/gif/png" href="image/titlelogo.png">
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+    </head>
+<body>
+    <nav>
+	    <a class="logonavhome" href="index.html"><img src="image/homeblue.png"></a>
+        <div class="navkanan" id="navkanan">
+            <a href="brands.html" id="tagbranddinav">BRANDS</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="brands.html"  id="tagbranddinav">BRANDS</a>
+        <a href="about.html">ABOUT</a>
+    </div>
+
+    <span onclick="openNav()">&#9776;
+    </span>
+
+    <main>
+        <div class="container2" id="container2">
+            <div class="banyakbrand" onload="brandbg(this.innerHTML)">
+                <div class="pilihanbrand" id="pilihanbrand">
+                    <div class="brand kosongan" id="logodoang"></div>
+                    <div class="brand kosongan"></div>
+                    <div class="brand kosongan"></div>
+                    <div class="brand kosongan"></div>
+                    <a class="brand start" id="pil1" href="#container2" onmouseover="apple(this.innerHTML)" onclick="appleclick(this.innerHTML)">Apple</a>
+                    <a class="brand kotak" id="pil2" href="#container2" onmouseover="razer(this.innerHTML)" onclick="razerclick(this.innerHTML)">Razer</a>
+                    <a class="brand kotak" id="pil3" href="#container2" onmouseover="hp(this.innerHTML)" onclick="hpclick(this.innerHTML)">HP</a>
+                    <a class="brand ended" id="pil4" href="#container2" onmouseover="dell(this.innerHTML)" onclick="dellclick(this.innerHTML)">Dell</a>
+                </div>
+            </div>
+            <div class="coverbrand" id="coverbrand">
+                <a href="#buttoncover" class="buttoncover" id="buttoncover">Discover</a>
+            </div>
+            <div class="isibrand" id="isibrand">
+                    <a class="barangbrand" id="bb1" href="infombp.html">
+                        <div class="pilihanbarangbrand" id="pilihanbarangbrand1"></div>
+                        <div class="textbarangbrand" id="textbarangbrand1"></div>
+                    </a>
+                    <a class="barangbrand" id="bb2" href="infombp.html">
+                        <div class="pilihanbarangbrand" id="pilihanbarangbrand2"></div>
+                        <div class="textbarangbrand" id="textbarangbrand2">
+                        </div>
+                    </a>
+                    <a class="barangbrand" id="bb3" href="infombp.html">
+                        <div class="pilihanbarangbrand" id="pilihanbarangbrand3"></div>
+                        <div class="textbarangbrand" id="textbarangbrand3">
+                        </div>
+                    </a>
+                    <a class="barangbrand end" id="bb4" href="infombp.html">
+                        <div class="pilihanbarangbrand" id="pilihanbarangbrand4"></div>
+                        <div class="textbarangbrand" id="textbarangbrand4">
+                        </div>
+                    </a>
+                    <a class="barangbrand " id="bb5" href="infombp.html">
+                        <div class="pilihanbarangbrand" id="pilihanbarangbrand5"></div>
+                        <div class="textbarangbrand" id="textbarangbrand5">
+                        </div>
+                    </a>
+                    <a class="barangbrand ended" id="bb6" href="infombp.html">
+                        <div class="pilihanbarangbrand" id="pilihanbarangbrand6"></div>
+                        <div class="textbarangbrand" id="textbarangbrand6">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="boxfooter">
+                <h1>About Us</h1><br>
+                <p>UncleSam is an international gadget </p><br>
+                <p>store. We provides USA gadgets legally</p><br>
+                <p>that you can buy with no worries.</p>
+            </div>
+            <div class="boxfooter">
+                <h1>Our Store</h1><br>
+                <p>UncleSam Store (Online)</p><br>
+                <p>UncleSam Store (Retail)</p><br>
+                <p>Partners and Affiliate</p>
+            </div>
+            <div class="boxfooter">
+                <h1>Help Center</h1><br>
+                <p>Support</p><br>
+                <p>Warranty</p><br>
+                <p>Store FAQs</p>
+            </div>
+            <div class="boxfooter end">
+                <h1>Contacts</h1><br>
+                <p>Facebook</p><br>
+                <p>Twitter</p><br>
+                <p>Instagram</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        
+        document.getElementById('tagbranddinav').style.color="rgb(0, 113, 189)";
+
+        
+        document.getElementById('coverbrand').style.backgroundSize="cover";
+        document.getElementById('coverbrand').style.backgroundRepeat="no-repeat";
+
+        document.getElementById('buttoncover').style.display="none";
+        document.getElementById('isibrand').style.display="none";
+
+        function brandbg(e) {
+                        if (e.matches) { // If media query matches
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverbrandhp.jpg')";
+                            document.getElementById('coverbrand').style.backgroundSize="cover";
+                            document.getElementById('coverbrand').style.backgroundRepeat="no-repeat";
+                        } else {
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverbrand.jpg')";
+                        }
+                    }
+                    var e = window.matchMedia("(max-width: 768px)")
+                    brandbg(e) // Call listener function at run time
+                    e.addListener(brandbg) // Attach listener function on state changes
+
+        function apple(a) {
+            if (a == 'Apple') {
+                /*document.getElementById('pil1').style.borderColor="rgb(0, 113, 189)";*/
+            } else {
+                alert('This site is broken.')}
+        }
+            function appleclick(a) {
+                if (a == 'Apple') {
+
+                    document.getElementById('buttoncover').style.display="block";
+                    document.getElementById('isibrand').style.display="block";
+                    
+                    
+                    document.getElementById('coverbrand').style.backgroundSize="cover";
+                    document.getElementById('coverbrand').style.backgroundRepeat="no-repeat";
+
+                    document.getElementById('pil1').style.backgroundColor="rgb(0, 113, 189)";
+                    document.getElementById('pil1').style.borderColor="rgb(0, 113, 189)";
+                    document.getElementById('pil1').style.color="white";
+                    
+                    document.getElementById('pil2').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil2').style.borderColor="white";
+                    document.getElementById('pil2').style.color="white";
+
+                    document.getElementById('pil3').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil3').style.borderColor="white";
+                    document.getElementById('pil3').style.color="white";
+
+                    document.getElementById('pil4').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil4').style.borderColor="white";
+                    document.getElementById('pil4').style.color="white";
+
+                    var head1= "MacBook Pro";
+                    var p1="From $1299";
+                    var isi1='<h1>'+ head1 + '</h1><br><p>'+ p1 + '</p>';
+                    document.getElementById('textbarangbrand1').innerHTML= isi1;
+                    document.getElementById('pilihanbarangbrand1').style.backgroundImage = "url('./imgproduk/mbpbg.jpg')";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundPosition = "center";
+
+                    var head2= "MacBook Air";
+                    var p2="From $999";
+                    var isi2='<h1>'+ head2 + '</h1><br><p>'+ p2 + '</p>';
+                    document.getElementById('textbarangbrand2').innerHTML= isi2;
+                    document.getElementById('pilihanbarangbrand2').style.backgroundImage = "url('./imgproduk/mbabg.jpg')";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundPosition = "center";
+                    
+                    var head3= "Mac Pro";
+                    var p3="From $5999";
+                    var isi3='<h1>'+ head3 + '</h1><br><p>'+ p3 + '</p>';
+                    document.getElementById('textbarangbrand3').innerHTML= isi3;
+                    document.getElementById('pilihanbarangbrand3').style.backgroundImage = "url('./imgproduk/macbg.jpg')";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundPosition = "center";
+                    
+                    var head4= "Pro Display XDR";
+                    var p4="From $4999";
+                    var isi4='<h1>'+ head4 + '</h1><br><p>'+ p4 + '</p>';
+                    document.getElementById('textbarangbrand4').innerHTML= isi4;
+                    document.getElementById('pilihanbarangbrand4').style.backgroundImage = "url('./imgproduk/xdrbg.jpg')";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundPosition = "center";
+                    
+                    var head5= "iPad Pro";
+                    var p5="From $799";
+                    var isi5='<h1>'+ head5 + '</h1><br><p>'+ p5 + '</p>';
+                    document.getElementById('textbarangbrand5').innerHTML= isi5;
+                    document.getElementById('pilihanbarangbrand5').style.backgroundImage = "url('./imgproduk/iprobg.jpg')";
+                    document.getElementById('pilihanbarangbrand5').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand5').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand5').style.backgroundPosition = "center";
+                    
+                    var head6= "iPad Air";
+                    var p6="From $499";
+                    var isi6='<h1>'+ head6 + '</h1><br><p>'+ p6 + '</p>';
+                    document.getElementById('textbarangbrand6').innerHTML= isi6;
+                    document.getElementById('pilihanbarangbrand6').style.backgroundImage = "url('./imgproduk/iairbg.jpg')";
+                    document.getElementById('pilihanbarangbrand6').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand6').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand6').style.backgroundPosition = "center";
+                    
+                    document.getElementById('bb5').style.display= "inline-block";
+                    
+                    document.getElementById('bb6').style.display= "inline-block";
+
+                    function appleclick(a) {
+                        if (a.matches) { // If media query matches
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverapplehp.jpg')";
+                            document.getElementById('buttoncover').style.display="none";
+                        } else {
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverapple.jpg')";
+                        }
+                    }
+                    var a = window.matchMedia("(max-width: 768px)")
+                    appleclick(a) // Call listener function at run time
+                    a.addListener(appleclick) // Attach listener function on state changes
+
+                } else {
+                    alert('This site is broken.')}
+            }
+            
+                
+        function razer(b) {
+            if (b == 'Razer') {
+                /*document.getElementById('pil2').style.borderColor="rgb(0, 113, 189)";*/
+            } else {
+                alert('This site is broken.')}
+        }
+            function razerclick(b) {
+                if (b == 'Razer') {
+
+                    document.getElementById('buttoncover').style.display="block";
+                    document.getElementById('isibrand').style.display="block";
+                    
+                    
+                    document.getElementById('coverbrand').style.backgroundSize="cover";
+                    document.getElementById('coverbrand').style.backgroundRepeat="no-repeat";
+
+                    document.getElementById('pil2').style.backgroundColor="rgb(0, 113, 189)";
+                    document.getElementById('pil2').style.borderColor="rgb(0, 113, 189)";
+                    document.getElementById('pil2').style.color="white";
+                    
+                    document.getElementById('pil1').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil1').style.borderColor="white";
+                    document.getElementById('pil1').style.color="white";
+
+                    document.getElementById('pil3').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil3').style.borderColor="white";
+                    document.getElementById('pil3').style.color="white";
+
+                    document.getElementById('pil4').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil4').style.borderColor="white";
+                    document.getElementById('pil4').style.color="white";
+
+                    var head1= "Razer Blade";
+                    var p1="From $1399";
+                    var isi1='<h1>'+ head1 + '</h1><br><p>'+ p1 + '</p>';
+                    document.getElementById('textbarangbrand1').innerHTML= isi1;
+                    document.getElementById('pilihanbarangbrand1').style.backgroundImage = "url('./imgproduk/rbbg.jpg')";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundPosition = "center";
+
+                    var head2= "Razer Blade Stealth";
+                    var p2="From $1099";
+                    var isi2='<h1>'+ head2 + '</h1><br><p>'+ p2 + '</p>';
+                    document.getElementById('textbarangbrand2').innerHTML= isi2;
+                    document.getElementById('pilihanbarangbrand2').style.backgroundImage = "url('./imgproduk/rbsbg.jpg')";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundPosition = "center";
+                    
+                    var head3= "Razer Blade Pro";
+                    var p3="From $1799";
+                    var isi3='<h1>'+ head3 + '</h1><br><p>'+ p3 + '</p>';
+                    document.getElementById('textbarangbrand3').innerHTML= isi3;
+                    document.getElementById('pilihanbarangbrand3').style.backgroundImage = "url('./imgproduk/rbpbg.jpg')";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundPosition = "center";
+                    
+                    var head4= "Razer Blade Studio";
+                    var p4="From $3999";
+                    var isi4='<h1>'+ head4 + '</h1><br><p>'+ p4 + '</p>';
+                    document.getElementById('textbarangbrand4').innerHTML= isi4;
+                    document.getElementById('pilihanbarangbrand4').style.backgroundImage = "url('./imgproduk/studiobg.jpg')";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundPosition = "center";
+                    
+                    var head5= "Razer Raptor";
+                    var p5="From $699";
+                    var isi5='<h1>'+ head5 + '</h1><br><p>'+ p5 + '</p>';
+                    document.getElementById('textbarangbrand5').innerHTML= isi5;
+                    document.getElementById('pilihanbarangbrand5').style.backgroundImage = "url('./imgproduk/raptorbg.jpg')";
+                    document.getElementById('pilihanbarangbrand5').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand5').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand5').style.backgroundPosition = "center";
+                    
+                    var head6= "Razer Core X";
+                    var p6="From $299";
+                    var isi6='<h1>'+ head6 + '</h1><br><p>'+ p6 + '</p>';
+                    document.getElementById('textbarangbrand6').innerHTML= isi6;
+                    document.getElementById('pilihanbarangbrand6').style.backgroundImage = "url('./imgproduk/corexbg.jpg')";
+                    document.getElementById('pilihanbarangbrand6').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand6').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand6').style.backgroundPosition = "center";
+                    
+                    document.getElementById('bb5').style.display= "inline-block";
+                    
+                    document.getElementById('bb6').style.display= "inline-block";
+
+                    function razerclick(b) {
+                        if (b.matches) { // If media query matches
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverrazerhp.jpg')";
+                            document.getElementById('buttoncover').style.display="none";
+                        } else {
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverrazer.jpg')";
+                        }
+                    }
+                    var b = window.matchMedia("(max-width: 768px)")
+                    razerclick(b) // Call listener function at run time
+                    b.addListener(razerclick) // Attach listener function on state changes
+                    
+                } else {
+                    alert('This site is broken.')}
+            }
+            
+
+        function hp(c) {
+            if (c == 'HP') {
+                /*document.getElementById('pil3').style.borderColor="rgb(0, 113, 189)";*/
+            } else {
+                alert('This site is broken.')}
+        }
+            function hpclick(c) {
+                if (c == 'HP') {
+                    /*var judulbawah = "HP";
+                    var isibawah = "Thoughtfully Designed.";
+                
+                    var contentbawah = '<div class="cobain kiri"><p>'+ judulbawah + '</p><br><h2>' + isibawah + '</h2></div><div class="cobain kanan 1"><a href="#" class="morin"  onclick="viewhp(this.innerHTML)">View</a></div><div class="cobain kanan 2"><a href="#" class="morin">Buy</a></div>'
+
+                    document.getElementById('contohbrand').style.backgroundColor="none";
+                    document.getElementById('contohbrand').style.backgroundImage = "url('./image/cbbghp.jpg')";
+                    document.getElementById('contohbrand').style.backgroundSize = "cover";
+
+                    document.getElementById('isikiribawah').style.backgroundColor="none";
+                    document.getElementById('isikiribawah').innerHTML= contentbawah;*/
+
+                    document.getElementById('buttoncover').style.display="block";
+                    document.getElementById('isibrand').style.display="block";
+
+                    
+                    document.getElementById('coverbrand').style.backgroundSize="cover";
+                    document.getElementById('coverbrand').style.backgroundRepeat="no-repeat";
+
+                    document.getElementById('pil3').style.backgroundColor="rgb(0, 113, 189)";
+                    document.getElementById('pil3').style.borderColor="rgb(0, 113, 189)";
+                    document.getElementById('pil3').style.color="white";
+                    
+                    document.getElementById('pil2').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil2').style.borderColor="white";
+                    document.getElementById('pil2').style.color="white";
+
+                    document.getElementById('pil1').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil1').style.borderColor="white";
+                    document.getElementById('pil1').style.color="white";
+
+                    document.getElementById('pil4').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil4').style.borderColor="white";
+                    document.getElementById('pil4').style.color="white";
+
+                    
+                    var head1= "HP Envy";
+                    var p1="From $799";
+                    var isi1='<h1>'+ head1 + '</h1><br><p>'+ p1 + '</p>';
+                    document.getElementById('textbarangbrand1').innerHTML= isi1;
+                    document.getElementById('pilihanbarangbrand1').style.backgroundImage = "url('./imgproduk/hpebg.jpg')";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundPosition = "center";
+
+                    var head2= "HP Spectre x360";
+                    var p2="From $919";
+                    var isi2='<h1>'+ head2 + '</h1><br><p>'+ p2 + '</p>';
+                    document.getElementById('textbarangbrand2').innerHTML= isi2;
+                    document.getElementById('pilihanbarangbrand2').style.backgroundImage = "url('./imgproduk/hpsbg.jpg')";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundPosition = "center";
+                    
+                    var head3= "HP Spectre Folio";
+                    var p3="From $1399";
+                    var isi3='<h1>'+ head3 + '</h1><br><p>'+ p3 + '</p>';
+                    document.getElementById('textbarangbrand3').innerHTML= isi3;
+                    document.getElementById('pilihanbarangbrand3').style.backgroundImage = "url('./imgproduk/hpfbg.jpg')";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundPosition = "center";
+                    
+                    var head4= "HP EliteBook";
+                    var p4="From $1411";
+                    var isi4='<h1>'+ head4 + '</h1><br><p>'+ p4 + '</p>';
+                    document.getElementById('textbarangbrand4').innerHTML= isi4;
+                    document.getElementById('pilihanbarangbrand4').style.backgroundImage = "url('./imgproduk/hpelbg.jpg')";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundPosition = "center";
+                    
+                    document.getElementById('bb5').style.display= "none";
+                    
+                    document.getElementById('bb6').style.display= "none";
+                    
+                    function hpclick(c) {
+                        if (c.matches) { // If media query matches
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverhphp.jpg')";
+                            document.getElementById('buttoncover').style.display="none";
+                        } else {
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverhp.jpg')";
+                        }
+                    }
+                    var c = window.matchMedia("(max-width: 768px)")
+                    hpclick(c) // Call listener function at run time
+                    c.addListener(hpclick) // Attach listener function on state changes
+
+                } else {
+                    alert('This site is broken.')}
+            }
+
+        function dell(d) {
+            if (d == 'Dell') {
+                /*document.getElementById('pil4').style.borderColor="rgb(0, 113, 189)";*/
+            } else {
+                alert('This site is broken.')}
+        }
+            function dellclick(d) {
+                if (d == 'Dell') {
+                    /*var judulbawah = "Dell";
+                    var isibawah = "Beauty Meets Power.";
+                
+                    var contentbawah = '<div class="cobain kiri"><p>'+ judulbawah + '</p><br><h2>' + isibawah + '</h2></div><div class="cobain kanan 1"><a href="#" class="morin"  onclick="viewdell(this.innerHTML)">View</a></div><div class="cobain kanan 2"><a href="#" class="morin">Buy</a></div>'
+
+                    document.getElementById('contohbrand').style.backgroundColor="none";
+                    document.getElementById('contohbrand').style.backgroundImage = "url('./image/cbbgdell.jpg')";
+                    document.getElementById('contohbrand').style.backgroundSize = "cover";
+
+                    document.getElementById('isikiribawah').style.backgroundColor="none";
+                    document.getElementById('isikiribawah').innerHTML= contentbawah;*/
+
+                    document.getElementById('buttoncover').style.display="block";
+                    document.getElementById('isibrand').style.display="block";
+                    
+                    
+                    document.getElementById('coverbrand').style.backgroundSize="cover";
+                    document.getElementById('coverbrand').style.backgroundRepeat="no-repeat";
+
+                    document.getElementById('pil4').style.backgroundColor="rgb(0, 113, 189)";
+                    document.getElementById('pil4').style.borderColor="rgb(0, 113, 189)";
+                    document.getElementById('pil4').style.color="white";
+                    
+                    document.getElementById('pil2').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil2').style.borderColor="white";
+                    document.getElementById('pil2').style.color="white";
+
+                    document.getElementById('pil3').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil3').style.borderColor="white";
+                    document.getElementById('pil3').style.color="white";
+
+                    document.getElementById('pil1').style.backgroundColor="rgb(40, 40, 40)";
+                    document.getElementById('pil1').style.borderColor="white";
+                    document.getElementById('pil1').style.color="white";
+                    
+                    var head1= "XPS 2020";
+                    var p1="From $849";
+                    var isi1='<h1>'+ head1 + '</h1><br><p>'+ p1 + '</p>';
+                    document.getElementById('textbarangbrand1').innerHTML= isi1;
+                    document.getElementById('pilihanbarangbrand1').style.backgroundImage = "url('./imgproduk/xps1bg.jpg')";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand1').style.backgroundPosition = "center";
+
+                    var head2= "XPS 2-in-1 2020";
+                    var p2="From $999";
+                    var isi2='<h1>'+ head2 + '</h1><br><p>'+ p2 + '</p>';
+                    document.getElementById('textbarangbrand2').innerHTML= isi2;
+                    document.getElementById('pilihanbarangbrand2').style.backgroundImage = "url('./imgproduk/xps2bg.jpg')";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand2').style.backgroundPosition = "center";
+                    
+                    var head3= "Inspiron 15 7591";
+                    var p3="From $799";
+                    var isi3='<h1>'+ head3 + '</h1><br><p>'+ p3 + '</p>';
+                    document.getElementById('textbarangbrand3').innerHTML= isi3;
+                    document.getElementById('pilihanbarangbrand3').style.backgroundImage = "url('./imgproduk/1575bg.jpg')";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand3').style.backgroundPosition = "center";
+                    
+                    var head4= "Inspiron 15 7000";
+                    var p4="From $1349";
+                    var isi4='<h1>'+ head4 + '</h1><br><p>'+ p4 + '</p>';
+                    document.getElementById('textbarangbrand4').innerHTML= isi4;
+                    document.getElementById('pilihanbarangbrand4').style.backgroundImage = "url('./imgproduk/1570bg.jpg')";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundSize = "cover";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundRepeat = "no-repeat";
+                    document.getElementById('pilihanbarangbrand4').style.backgroundPosition = "center";
+                    
+                    document.getElementById('bb5').style.display= "none";
+                    
+                    document.getElementById('bb6').style.display= "none";
+                    
+                    function dellclick(d) {
+                        if (d.matches) { // If media query matches
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverdellhp.jpg')";
+                            document.getElementById('buttoncover').style.display="none";
+                        } else {
+                            document.getElementById('coverbrand').style.backgroundImage="url('./image/bgcoverdell.jpg')";
+                        }
+                    }
+                    var d = window.matchMedia("(max-width: 768px)")
+                    dellclick(d) // Call listener function at run time
+                    d.addListener(dellclick) // Attach listener function on state changes
+
+                } else {
+                    alert('This site is broken.')}
+            }
+            
+    </script>
+</body>
+</html>

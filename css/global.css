@@ -1,0 +1,1902 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.sidenav{
+    display: none;
+}
+span{
+	display: none;
+}
+.aboutpage{
+    width: 74vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    height: 100vh;
+    padding-top: 100px;
+    background-color: white;
+    font-family: 'bahnschrift', sans-serif ;
+    text-decoration: none;
+}
+.aboutpage h1{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    line-height: 2;
+}
+.aboutpage p{
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+    line-height: 1.6;
+}
+footer{
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    position: relative;
+    width: 74vw;
+    height: 200px;
+    background-color: rgb(245, 245, 245);
+    z-index: 5;
+}
+.boxfooter{
+    margin-right: 20px;
+    width: 17vw;
+    height: 180px;
+    display: inline-block;
+    background-color: none;
+    font-family: 'bahnschrift', sans-serif ;
+    text-decoration: none;
+}
+.boxfooter h1{
+    font-size: 18px;
+    color: rgb(40, 40, 40);
+    font-weight: 600;
+    line-height: 2;
+}
+.boxfooter p{
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+    line-height: 1.6;
+}
+nav{
+    width: 100vw;
+    height: 80px;
+    z-index: 10;
+    position: fixed;
+    vertical-align: middle;
+    border-bottom: 4px solid rgb(28, 117, 188);
+    background-color: rgb(40, 40, 40);
+}
+.logonavhome{
+    margin: 20px 200px;
+    padding-left: 0;
+    float: none;
+    width: 170px;
+    height: 60px;
+    position: fixed;
+    z-index: 20;
+    background-color: none;
+}
+.logonavhome *{
+    max-width: 100%;
+    max-height: 100%;
+}
+.navkanan{
+    margin: 27px 20px;
+    display: inline;
+    position: fixed;
+    right: 200px;
+    vertical-align: middle;
+    text-align: center;
+}
+.navkanan *{
+    margin: 10px 10px;
+    padding: 10px 0 10px 40px;
+    font-size: 20px;
+    font-family: 'bahnschrift', sans-serif ;
+    text-decoration: none;
+    color: white;
+    transition: 0.25s;
+}
+.navkanan *:hover{
+    color: rgb(28, 117, 188);
+}
+main{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 6;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.covidalert{
+    margin: 0;
+    margin-top: 80px;
+    width: 100vw;
+    height: 20px;
+    padding: 10px;
+    background-color: rgb(170, 0, 0);
+}
+.covidalert h1{
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'bahnschrift', sans-serif ;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+.mySlides {
+    display: none;
+}
+
+.mySlides *{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+/* Slideshow container */
+.slideshow-container {
+    margin: 0 auto;
+    margin-top: 0;
+    width: 100vw;
+    position: relative;
+    height: 500px;
+    display: flex;
+    background-color: none;
+}
+
+/* Caption text */
+.texthome {
+    font-size: 40px;
+    font-family: 'bahnschrift', sans-serif ;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    top: 61%;
+    right: -14vw;
+    width: 100%;
+    height: 80px;
+    text-align: left;
+}
+.texthome p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.buttonhome {
+    z-index: 8;
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 20px;
+    padding: 12px 35px;
+    padding-bottom: 0;
+    width: auto;
+    height: 35px;
+    background-color: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 40px;
+    position: relative;
+    transition: 0.25s;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    top: -18%;
+    right: -13%;
+}
+.buttonhome:hover {
+    background-color: rgb(28, 117, 188);
+    border-color: rgb(28, 117, 188);
+    color: white;
+}
+.indikator{
+    top: -10%;
+    right: 14%;
+    position: relative;
+    text-align: right;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(160, 160, 160);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: rgb(28, 117, 188);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.2s;
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.containerutama{
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 30px 13vw;
+    display: grid;
+    grid-template-columns: 23.4% 23.4% 23.4% 23.4% ;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    grid-template-areas:
+    'special special special special'
+    '. . . .'
+    ;
+    width: 74vw;
+    height: auto;
+    background-color: white;
+}
+.bujur{
+    height: 350px;
+    border-radius: 10px;
+    background-color: none;
+    transition: 0.25s;
+    text-decoration: none;
+}
+.bujur:hover{
+    scale: 106%;
+}
+.special{
+    height: 80px;
+    background-color: white;
+    font-family: 'bahnschrift', sans-serif ;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    grid-area: special
+}
+.special h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+}
+.special p{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+}
+.special:hover{
+    scale: 100%;
+}
+
+.container2{
+    width: 100vw;
+    height: auto;
+}
+.container2 *{
+    display: inline-block;
+    top: 0;
+    background-color: none;
+}
+
+.banyakbrand{
+    margin-top: 84px;
+    padding-bottom: 50px;
+    position: sticky;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    width: 74vw;
+    height: 30px;
+    padding-right: 13vw;
+    padding-left: 13vw;
+    background-color: rgb(40, 40, 40);
+}
+
+.pilihanbrand{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.brand{
+    display: inline-block;
+    position: relative;
+    transition: 0.25s;
+    margin-top: 15px;
+    height: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
+    border: solid 3px white;
+    font-size: 18px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.brand:hover{
+    background-color: rgb(28, 117, 188);
+    border-color: rgb(28, 117, 188);
+    color: white;
+}
+.kosongan{
+    background-color: none;
+    color: none;
+    border: none;
+}
+.kosongan:hover{
+    background-color: rgb(40, 40, 40);
+    color: rgb(40, 40, 40);
+    border: rgb(40, 40, 40);
+}
+.brand *{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.brand h1{
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: white;
+    float: left;
+    position: relative;
+}
+
+.coverbrand{
+    width: 74vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    height: 80vh;
+    position: relative;
+    display: block;
+}
+.buttoncover{
+    margin-top: 30px;
+    padding: 15px 35px;
+    width: 120px;
+    height: 30px;
+    background-color: none;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(28, 117, 188);
+    border-radius: 40px;
+    top: 70%;
+    left: 43.5%;
+    position: absolute;
+    transition: 0.25s;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(28, 117, 188);
+    vertical-align: middle;
+}
+.buttoncover:hover {
+    background-color: rgb(28, 117, 188);
+    color: white;
+}
+.isibrand {
+    width: 74vw;
+    height: auto;
+    padding-right: 13vw;
+    padding-left: 13vw;
+    background-color: none;
+    display: block;
+    position: relative;
+}
+.barangbrand{
+    width: 23.4%;
+    height: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: none;
+    transition: ease 0.25s;
+}
+.barangbrand:hover{
+    scale: 106%;
+}
+.pilihanbarangbrand{
+    height: 64%;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    background-color: black;
+    transition: 0.25s;
+    border: solid rgb(180, 180, 180) 4px;
+}
+.pilihanbarangbrand:hover{
+    border: solid rgb(28, 117, 188) 4px;
+}
+.textbarangbrand{
+    padding-top: 15px;
+    padding-left: 20px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+    font-size: 18px;
+    position: relative;
+}
+.textbarangbrand h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.textbarangbrand p {
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+}
+.headinfo{
+    margin-top: 84px;
+    padding-bottom: 50px;
+    position: sticky;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    width: 74vw;
+    height: 30px;
+    padding-right: 13vw;
+    padding-left: 13vw;
+    background-color: rgb(40, 40, 40);
+    font-family: 'bahnschrift', sans-serif;
+    ;
+}
+.dalemaninfo{
+    width: 100%;
+    position: relative;
+}
+.infombpkiri{
+    margin: 20px 0px;
+    padding-left: 0;
+    float: none;
+    width: 200px;
+    height: 60px;
+    z-index: 20;
+    position: relative;
+}
+.infombpkiri h1{
+    font-weight: 500;
+    color: rgb(180, 180, 180);
+    background-color: none;
+    transition: 0.25s;
+}
+.infombpkiri *:hover{
+    color: white;
+}
+.infombpkanan{
+    margin: 27px 20px;
+    display: inline;
+    position: absolute;
+    right: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.infombpkanan *{
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    transition: 0.25s;
+}
+.infombpkanan *:hover{
+    color: white;
+}
+.buybutton {
+    margin-top: -7px;
+    padding: 8px 10px;
+    width: 60px;
+    height: 20px;
+    background-color: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 40px;
+    position: relative;
+    transition: 0.25s;
+    font-family: 'bahnschrift', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+.buybutton:hover {
+    background-color: rgb(28, 117, 188);
+    border-color: rgb(28, 117, 188);
+    color: white;
+}
+.container3{
+    width: 100vw;
+    height: auto;
+    background-color: white;
+}
+.overviewmbp{
+    width: 74vw;
+    height: auto;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    background-color: white;
+}
+.highlight{
+    width: 74vw;
+    height: auto;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    background-color: white;
+}
+.a {
+    padding-top: 100px;
+}
+.b {
+    padding-top: 100px;
+}
+.coverisi1{
+    width: 100%;
+    height: 600px;
+    padding: 100px 0 0 0;
+}
+.coverisi1 h1{
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(80, 80, 80);
+}
+.coverisi1 h3{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 28px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(134, 134, 134);
+}
+.coverisi2{
+    width: 100%;
+    height: 800px;
+    padding: 100px 0 0 0;
+}
+.coverisi2 h1{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(80, 80, 80);
+}
+.coverisi2 h4{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(134, 134, 134);
+}
+.perform{
+    display: inline-block;
+    margin: 40px 2%;
+    width: 20%;
+    height: 200px;
+    background-color: none;
+}
+.perform h1{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(40, 40, 40);
+}
+.perform h3{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(40, 40, 40);
+}
+.perform p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.container4{
+    width: 73vw;
+    padding: 100px 13vw 0px 13vw;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+.container4 h1{
+    padding-left: 0;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.container4 h2{
+    padding-left: 0;
+    margin-right: 17%;
+    margin-left: 17%;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+.container4 h4{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(134, 134, 134);
+}
+.perform1{
+    display: inline-block;
+    margin: 40px 4%;
+    width: 25%;
+    height: 200px;
+    background-color: none;
+}
+.perform1 h1{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(40, 40, 40);
+}
+.perform1 h3{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(40, 40, 40);
+}
+.perform1 p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(80, 80, 80);
+}
+.coverfeature{
+    display: inline-block;
+    margin: 40px 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(80, 80, 80);
+}
+.container5{
+    width: 100vw;
+    padding: 100px 0;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+.container5 h2{
+    padding-left: 13vw;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.buypage{
+    background-color: rgb(255, 255, 255);
+}
+.buypage *{
+    color: rgb(80, 80, 80);
+}
+.buypage * h1{
+    color: rgb(80, 80, 80);
+}
+.buypage *:hover{
+    color: rgb(40, 40, 40);
+}
+.fotoprodukkiri{
+    margin-top: 40px;
+    width: 45%;
+    height: 400px;
+    display: inline-block;
+}
+.specprodukkanan{
+    padding-top: 20px;
+    padding-left: 40px;
+    margin-bottom: 40px;
+    width: 50%;
+    height: 400px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    line-height: 1.2;
+    color: rgb(80, 80, 80);
+}
+.specprodukkanan h1{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'bahnschrift', sans-serif;
+}
+.specprodukkanan p{
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(160, 160, 160);
+}
+.conf1 {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    display: block;
+    position: relative;
+}
+.conf1 h1{
+    display: block;
+    font-size: 26px;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+}
+.conf2 {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    display: block;
+    position: relative;
+}
+.conf2 h1{
+    display: block;
+    font-size: 26px;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+}
+.isiconf{
+    width: 23.4%;
+    height: 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    border: solid 4px rgb( 180, 180, 180);
+    background-color: none;
+    transition: ease 0.25s;
+}
+.isiconf:hover{
+    border-color: rgb(28, 117, 188);
+}
+.end{
+    margin-right: 0;
+}
+.textconf{
+    padding: 15px 20px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+    font-size: 18px;
+    position: relative;
+}
+.textconf h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.conf3 {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    display: block;
+    position: relative;
+}
+.conf3 h1{
+    display: block;
+    font-size: 32px;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+}
+.isibox{
+    width: 74vw;
+    padding: 80px 13vw;
+    height: auto;
+    background-color: white;
+}
+.isipaket{
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    background-color: none;
+}
+.hargabawah{
+    width: 74vw;
+    padding: 18px 13vw;
+    height: 44px;
+    z-index: 10;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgb(40, 40, 40);
+}
+.hargabawah *{
+    display: inline-block;
+}
+.infohargakiri *{
+    padding: 2px 40px 10px 0;
+    font-size: 18px;
+    font-family: 'bahnschrift', sans-serif ;
+    text-decoration: none;
+    line-height: 1.1;
+    font-weight: 500;
+    color: rgb( 210, 210, 210);
+    transition: 0.25s;
+    display: inline-block;
+}
+.infohargakiri p{
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+}
+.infohargakanan{
+    display: inline;
+    position: fixed;
+    right: 200px;
+    vertical-align: middle;
+    text-align: center;
+}
+.infohargakanan *{
+    padding: 8px 0 10px 40px;
+    font-size: 24px;
+    font-family: 'bahnschrift', sans-serif ;
+    text-decoration: none;
+    color: white;
+    transition: 0.25s;
+    display: inline-block;
+}
+.bayar{
+    display: inline-block;
+    position: relative;
+    transition: 0.25s;
+    height: 10px;
+    margin-left: 40px;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(28, 117, 188);
+    border: solid 3px rgb(28, 117, 188);
+    font-size: 18px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.bayar:hover{
+    background-color: rgb(43, 141, 221);
+    border-color: rgb(43, 141, 221);
+    color: white;
+}
+.boxcheckout{
+    padding: 40px 0;
+    width: 74vw;
+    margin: 0 13vw;
+    align-items: flex-start;
+    display: flex;
+}
+.isiform{
+    width: 49%;
+    padding: 0;
+    height: auto;
+    background-color: white;
+    display: inline-block;
+}
+.isiform h1{
+    font-size: 36px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
+}
+.checkoutaddress{
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: solid 4px rgb( 210, 210, 210);
+    width: 100%;
+    height: auto;
+}
+.checkoutaddress h1{
+    font-size: 22px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 400;
+}
+.pembayaran{
+    width: 50%;
+    padding: 0;
+    height: auto;
+    background-color: white;
+}
+.pembayaran h1{
+    font-size: 36px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.checkoutcard{
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: solid 4px white;
+    width: 100%;
+    height: auto;
+}
+.checkoutcard h1{
+    font-size: 22px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 400;
+}
+.confirmed{
+    padding: 20px 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    width: 40%;
+    height: 400px;
+    display: inline-block;
+    grid-area:
+    '.'
+    '.'
+    '.';
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    line-height: 1.2;
+    color: rgb(80, 80, 80);
+    background-color: none;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    * {
+		margin: 0;
+		padding: 0;
+    }
+    .aboutpage{
+        width: 74vw;
+        padding-left: 13vw;
+        padding-right: 13vw;
+        height: auto;
+        padding-top: 100px;
+        background-color: white;
+        font-family: 'bahnschrift', sans-serif ;
+        text-decoration: none;
+    }
+    .navkanan{
+        display: none;
+    }
+    .logonavhome{
+        margin-left: 0;
+        padding-left: 25px;
+    }
+	.sidenav{
+		display: block;
+		z-index: 21;
+	}
+	span{
+		font-size:30px;
+		cursor: pointer;
+		padding-right: 25px;
+        padding-top: 15px;
+        right: 0;
+		color: white;
+		display: block;
+		z-index: 10;
+		position: fixed;
+    }
+    span *{
+        align-items: center;
+        display: inline-block;
+    }
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 21;
+		top: 0;
+		right: 0;
+		background-color: rgb(31, 31, 31);
+		border-top-left-radius:20px;
+		border-bottom-left-radius: 20px;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 15px;
+	}
+	.sidenav * {
+		padding: 15px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 18px;
+        font-family: 'bahnschrift', sans-serif ;
+        text-decoration: none;
+        color: white;
+		display: block;
+		transition: 0.25s;
+	}
+	.sidenav *:hover{
+		color: rgb(28, 117, 188);
+	} 
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+    }
+    footer{
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-left: 13vw;
+        padding-right: 13vw;
+        position: relative;
+        width: 74vw;
+        height: 240px;
+        background-color: rgb(245, 245, 245);
+        z-index: 5;
+    }
+    .boxfooter{
+        margin-right: 20px;
+        width: 73vw;
+        height: 45px;
+        display: block;
+        background-color: none;
+        font-family: 'bahnschrift', sans-serif ;
+        text-decoration: none;
+    }
+    .boxfooter h1{
+        font-size: 18px;
+        color: rgb(40, 40, 40);
+        font-weight: 600;
+        line-height: 2;
+    }
+    .boxfooter p{
+        display: none;
+    }
+    .covidalert{
+        margin: 0;
+        margin-top: 80px;
+        width: 100vw;
+        height: 40px;
+        padding: 10px 20px;
+        background-color: rgb(170, 0, 0);
+    }
+    .covidalert h1{
+        margin: 0 auto;
+        padding-right: 40px;
+        font-size: 16px;
+        font-family: 'bahnschrift', sans-serif ;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+    }
+    .mySlides {
+        display: none;
+    }
+    
+    .mySlides *{
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+    }
+    /* Slideshow container */
+    .slideshow-container {
+        margin: 0 auto;
+        margin-top: 0;
+        width: 100vw;
+        position: relative;
+        height: 500px;
+        display: flex;
+        background-color: none;
+    }
+    
+    /* Caption text */
+    .texthome {
+        font-size: 40px;
+        font-family: 'bahnschrift', sans-serif ;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        position: absolute;
+        top: 47%;
+        right: -1vw;
+        width: 88%;
+        height: 80px;
+        text-align: left;
+    }
+    .texthome p{
+        line-height: 1.5;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .buttonhome {
+        z-index: 8;
+        display: inline-block;
+        margin-top: -5px;
+        margin-right: 20px;
+        padding: 12px 35px;
+        padding-bottom: 0;
+        width: auto;
+        height: 35px;
+        background-color: none;
+        border-style: solid;
+        border-width: 3px;
+        border-color: white;
+        border-radius: 40px;
+        position: relative;
+        transition: 0.25s;
+        font-family: 'bahnschrift', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        vertical-align: middle;
+        top: -17%;
+        right: -8%;
+    }
+    .buttonhome:hover {
+        background-color: rgb(28, 117, 188);
+        border-color: rgb(28, 117, 188);
+        color: white;
+    }
+    .indikator{
+        display: none;
+        top: -10%;
+        right: 14%;
+        position: relative;
+        text-align: right;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 5px;
+      width: 5px;
+      margin: 0 2px;
+      background-color: rgb(160, 160, 160);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: rgb(28, 117, 188);
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.2s;
+      animation-name: fade;
+      animation-duration: 1.2s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    main{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 6;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .containerutama{
+        margin: 0 auto;
+        margin-top: 0;
+        padding: 30px 8vw;
+        display: grid;
+        grid-template-columns: 60% 60% 60% 60%;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+        grid-template-areas:
+        'special special special special'
+        '. . . .'
+        ;
+        width: 100vw;
+        height: auto;
+        background-color: white;
+        overflow-x: scroll;
+		overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .bujur{
+        height: 350px;
+        border-radius: 10px;
+        background-color: none;
+        transition: 0.25s;
+        text-decoration: none;
+    }
+    .bujur:hover{
+        scale: 106%;
+    }
+    .special{
+        height: 80px;
+        background-color: white;
+        font-family: 'bahnschrift', sans-serif ;
+        text-decoration: none;
+        color: rgb(30, 30, 30);
+        overflow-x: hidden;
+        position: sticky;
+        left: 0;
+        grid-area: special
+    }
+    .special h1{
+        font-size: 40px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .special p{
+        font-size: 20px;
+        font-weight: 300;
+        text-align: left;
+    }
+    .special:hover{
+        scale: 100%;
+    }
+        
+    .banyakbrand{
+    margin-top: 84px;
+    padding-bottom: 50px;
+    position: sticky;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 30px;
+    padding-right:0;
+    padding-left: 0;
+    background-color: rgb(40, 40, 40);
+    }
+
+    .pilihanbrand{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    overflow-x: scroll;
+    }
+    .brand{
+    display: inline-block;
+    position: relative;
+    transition: 0.25s;
+    margin-top: 15px;
+    height: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
+    border: solid 2px white;
+    font-size: 18px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    }
+    .brand:hover{
+    background-color: rgb(28, 117, 188);
+    border-color: rgb(28, 117, 188);
+    color: white;
+    }
+    .kosongan{
+        display: none;
+    }
+    .start{
+        margin-left: 20px;
+    }
+    
+.coverbrand{
+    width: 88vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    height: 80vh;
+    position: relative;
+    display: block;
+}
+.buttoncover{
+    display: none;
+    
+}
+    
+.isibrand {
+    width: 100vw;
+    height: auto;
+    padding-right: 0;
+    padding-left: 13vw;
+    background-color: none;
+    display: block;
+    position: relative;
+    overflow-x: scroll;
+	overflow-y: hidden;
+    white-space: nowrap;
+}
+.barangbrand{
+    width: 250px;
+    height: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: none;
+    transition: ease 0.25s;
+}
+.barangbrand:hover{
+    scale: 106%;
+}
+.ended{
+    margin-right: 20px;
+}
+
+
+.headinfo{
+    margin-top: 84px;
+    padding-bottom: 50px;
+    position: sticky;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    width: 88%;
+    height: 30px;
+    padding-right: 6%;
+    padding-left: 6%;
+    background-color: rgb(40, 40, 40);
+    font-family: 'bahnschrift', sans-serif;
+    ;
+}
+.dalemaninfo{
+    width: 100%;
+    position: relative;
+}
+.infombpkiri{
+    margin: 22px 0px;
+    padding-left: 0;
+    float: none;
+    width: 200px;
+    height: 60px;
+    z-index: 20;
+    position: relative;
+}
+.infombpkiri h1{
+    font-weight: 500;
+    color: rgb(180, 180, 180);
+    background-color: none;
+    transition: 0.25s;
+    font-size: 28px;
+}
+.infombpkiri *:hover{
+    color: white;
+}
+.infombpkanan{
+    margin: 25px 0px;
+    display: inline;
+    position: absolute;
+    right: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.infombpkanan *{
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    transition: 0.25s;
+}
+.infombpkanan *:hover{
+    color: white;
+}
+.overview,
+.features,
+.specs{
+    display: none;
+}
+.buybutton {
+    margin-top: -7px;
+    padding: 8px 10px;
+    width: 60px;
+    height: 20px;
+    background-color: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 40px;
+    position: relative;
+    transition: 0.25s;
+    font-family: 'bahnschrift', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+.buybutton:hover {
+    background-color: rgb(28, 117, 188);
+    border-color: rgb(28, 117, 188);
+    color: white;
+}
+.container3{
+    width: 100vw;
+    height: auto;
+    background-color: white;
+}
+.overviewmbp{
+    width: 100vw;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: white;
+}
+.highlight{
+    width: 74vw;
+    height: auto;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    background-color: white;
+}
+.a {
+    padding-top: 100px;
+}
+.b {
+    padding-top: 100px;
+}
+.coverisi1{
+    width: 100%;
+    height: 500px;
+    padding: 100px 0 0 0;
+}
+.coverisi1 h1{
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(80, 80, 80);
+}
+.coverisi1 h3{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 28px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(134, 134, 134);
+}
+.coverisi2{
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+}
+.coverisi2 h1{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(80, 80, 80);
+}
+.coverisi2 h4{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(134, 134, 134);
+}
+.perform{
+    display: inline-block;
+    margin: 20px 2%;
+    width: 45%;
+    height: 50px;
+    background-color: none;
+}
+.perform h1{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(40, 40, 40);
+}
+.perform h3{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(40, 40, 40);
+}
+.perform p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.container4{
+    width: 73vw;
+    padding: 100px 13vw 0px 13vw;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+.container4 h1{
+    padding-left: 0;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.container4 h2{
+    padding-left: 0;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+.container4 h4{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(134, 134, 134);
+}
+.perform1{
+    display: inline-block;
+    margin: 20px 4%;
+    width: 80%;
+    height: 200px;
+    background-color: none;
+}
+.perform1 h1{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(40, 40, 40);
+}
+.perform1 h3{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(40, 40, 40);
+}
+.perform1 p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(80, 80, 80);
+}
+.coverfeature{
+    display: inline-block;
+    margin: 40px 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(80, 80, 80);
+}
+    
+.container5{
+    width: 100vw;
+    padding: 100px 0;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+.container5 h2{
+    padding-left: 13vw;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(60, 60, 60);
+}
+.buypage{
+    background-color: rgb(255, 255, 255);
+}
+.buypage *{
+    color: rgb(80, 80, 80);
+}
+.buypage * h1{
+    color: rgb(80, 80, 80);
+}
+.buypage *:hover{
+    color: rgb(40, 40, 40);
+}
+.fotoprodukkiri{
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+}
+.specprodukkanan{
+    padding-top: 20px;
+    padding-left: 40px;
+    margin-bottom: 40px;
+    width: 80%;
+    height: 400px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    line-height: 1.2;
+    color: rgb(80, 80, 80);
+}
+.specprodukkanan h1{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'bahnschrift', sans-serif;
+}
+.specprodukkanan p{
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(160, 160, 160);
+}
+    
+.conf1 {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    display: block;
+    position: relative;
+}
+.conf1 h1{
+    display: block;
+    font-size: 26px;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+}
+.conf2 {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    display: block;
+    position: relative;
+}
+.conf2 h1{
+    display: block;
+    font-size: 26px;
+    font-family: 'bahnschrift', sans-serif;
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+}
+.isiconf{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    border: solid 4px rgb( 180, 180, 180);
+    background-color: none;
+    transition: ease 0.25s;
+}
+.isiconf:hover{
+    border-color: rgb(28, 117, 188);
+}
+.end{
+    margin-right: 0;
+}
+
+.textconf{
+    padding: 15px 20px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+    font-size: 18px;
+    position: relative;
+}
+.textconf h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hargabawah{
+    width: 74vw;
+    padding: 18px 13vw;
+    height: 44px;
+    z-index: 10;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgb(40, 40, 40);
+}
+.hargabawah *{
+    display: inline-block;
+}
+.infohargakiri *{
+    padding: 2px 40px 10px 0;
+    font-size: 18px;
+    font-family: 'bahnschrift', sans-serif ;
+    text-decoration: none;
+    line-height: 1.1;
+    font-weight: 500;
+    color: rgb( 210, 210, 210);
+    transition: 0.25s;
+    display: none;
+}
+.infohargakiri p{
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+}
+.infohargakanan{
+    display: inline;
+    position: fixed;
+    right: 50px;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+.infohargakanan *{
+    padding: 0;
+    font-size: 24px;
+    font-family: 'bahnschrift', sans-serif ;
+    text-decoration: none;
+    color: white;
+    transition: 0.25s;
+    display: inline-block;
+}
+.bayar{
+    display: inline-block;
+    position: relative;
+    transition: 0.25s;
+    height: 10px;
+    margin-left: 40px;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(28, 117, 188);
+    border: solid 3px rgb(28, 117, 188);
+    font-size: 18px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.bayar:hover{
+    background-color: rgb(43, 141, 221);
+    border-color: rgb(43, 141, 221);
+    color: white;
+}
+
+.boxcheckout{
+    padding: 40px 0;
+    width: 88vw;
+    margin: 0 6vw;
+    align-items: flex-start;
+    display: block;
+}
+.isiform{
+    width: 100%;
+    padding: 0;
+    height: auto;
+    background-color: white;
+    display: inline-block;
+}
+.isiform h1{
+    font-size: 36px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
+}
+.checkoutaddress{
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: solid 4px rgb( 210, 210, 210);
+    width: 100%;
+    height: auto;
+}
+.checkoutaddress h1{
+    font-size: 22px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 400;
+}
+.pembayaran{
+    width: 50%;
+    padding: 0;
+    height: auto;
+    background-color: white;
+}
+.pembayaran h1{
+    font-size: 36px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+.checkoutcard{
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: solid 4px white;
+    width: 100%;
+    height: auto;
+}
+.checkoutcard h1{
+    font-size: 22px;
+    font-family: 'bahnschrift', sans-serif;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+}
+
+.confirmed{
+    padding: 0px 20px;
+    margin-left: 0;
+    margin-bottom: 40px;
+    width: 88%;
+    height: 400px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'bahnschrift', sans-serif;
+    line-height: 1.2;
+    color: rgb(80, 80, 80);
+    background-color: none;
+    border-radius: 20px;
+}
+.backtohome{
+    margin: 5px 0;
+}
+
+}
